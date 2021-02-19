@@ -1,2 +1,4 @@
 # JAVA-DATABASE-CONNECTIVITY
 DML operations inside NetBeans IDE
+
+In this project, I tried to allow a JAVA program to connect to a simple sql DB. First, I installed the Packages java.sql in the pom.xml file ( I am using maven projects). Then, i started to do the conecction with a static method in the class Conexión, so this method will be share for all the methods that wanted to conect to the DB. Also, i created to classes that are representing 2 different tables belonging to my local database. It is important to mention that, i used the DAO design, which means that the classes that actually work with the DB should be separated in a different package. These classes are MOVIMIENTOSDAO and productosDAO, inside each one, we can see different methods that represent one operation (select, update, delete, insert into). Finally, we have the main class (sentenciasejecutadora) where i created instances of the DAO classes to invoke the method to do the operations.
